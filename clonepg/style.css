@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+:root {
+    --font-principal:'Karla', sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner-inicial{
+    width: 100%;
+    height: 100vh;
+    background-color: #d9f0ff7a;
+    position: relative;
+    
+}
+
+.sessao-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.sessao-header img {
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+.sessao-header ul {
+    display: flex;
+}
+
+.sessao-header li {
+    list-style: none;
+    padding-left: 50px;
+    font-family: var(--font-principal);
+    cursor: pointer;
+}
+
+.sessao-header button {
+    width: 140px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #258AFF;
+    color: #258AFF;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 600;  
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;   
+}
+
+.sessao-main {
+    width: 550px;
+    height: 450px;
+    
+}
+
+.sessao-texto p {
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: 15px;
+    font-weight: bold;
+    color: #666666;
+    padding-bottom: 30px;
+}
+
+.sessao-texto h1 {
+    font-family: var(--font-principal);
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.ligth p {
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: 15px;
+    color: #666666;
+    padding-bottom: 30px;
+}
+
+.sessao-input {
+    position: relative;
+}
+
+.input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.field {
+    width: 275px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.field-label {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-principal);
+    border: none;
+    position: absolute;
+    left: 25px;
+    top: 19px;
+    color: #878B90;
+    font-size: 16px;
+}
+
+.field:focus ~ .field-label {
+    opacity: 0;
+}
+
+.input button {
+    width: 210px;
+    height: 60px;
+    background-color:#FC593B;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-principal);
+}
+
+.input button:hover {
+    background-color:#f83d1c;
+}
+
+.paragrafo-footer-main {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.paragrafo-footer-main p {
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: 15px;
+    color: #666666;
+    padding-bottom: 30px;
+}
+
+.conteiner-conteudo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteudo {
+    
+}
+
+.titulo-conteudo {
+    
+    display: flex;
+
+}

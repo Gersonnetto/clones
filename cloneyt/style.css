@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-principal: 'Roboto', sans-serif;
+}
+
+/* TELA INICIAL */
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-yt img {
+    position: absolute;
+    left: 53px;
+    top: 35px;
+}
+
+.lateral-1 img {
+    position: absolute;
+    left: 0;
+    top: 349px;
+}
+
+.lateral-2 img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.main-conteiner {
+    width: 470px;
+    height: 217px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-header {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.sessao-header h1 {
+    font-family: var(--font-principal);
+    color: #131313;
+    font-weight: 500;
+    font-size: 34px;
+    text-align: center;
+}
+
+.sessao-header p {
+    font-family: var(--font-principal);
+    padding-top: 10px;
+    font-weight: 300;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.sessao-header a {
+    display: flex;
+    justify-content: center;
+    outline: none;
+    text-decoration: none;
+}
+
+.sessao-header button {
+    background-color: #4285F4;
+    border: none;
+    width: 270px;
+    height: 55px;
+    border-radius: 2px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}   
+
+
+.imagem-wrapper {
+    width: 1000px;
+    height: 500px;
+}
+
+.imagem-wrapper img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+}   
+
+.clean {
+    width: 270px;
+    height: 100px;
+    position: absolute;
+    bottom: 200px;
+    right: 250px;
+}
+
+.clean h1 {
+    font-family: var(--font-principal);
+    font-weight: 500;
+    color: #131313;
+    font-size: 34px;
+}
+
+.clean p {
+    font-family: var(--font-principal);
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+/* DARK MOD */
+
+.sessao-conteiner-2 {
+    width: 100%;
+    height: 60vh;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-texto {
+    width: 250px;
+    height: 100px;
+    padding-right: 50px;
+    padding-bottom: 200px;
+}
+
+.sessao-texto h1 {
+    font-family: var(--font-principal);
+    color: white;
+    font-weight: 500;
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+.sessao-texto p {
+    font-family: var(--font-principal);
+    color: white;
+    font-weight: 100;
+}
+
+.imagem-wrapper-2 {
+    width: 800px;
+    height: 400px;
+}
+
+.imagem-wrapper-2 img {
+    width: 800px;
+    height: 400px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ROXO */
+
+.sessao-conteiner-3 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-texto-2 {
+    width: 400px;
+    height: 100px;  
+    padding-bottom: 50px;
+}
+
+.sessao-texto-2 h1 {
+    font-family: var(--font-principal);
+    color: #131313;
+    font-weight: 500;
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+
+.sessao-texto-2 p {
+    font-family: var(--font-principal);
+    color: #131313;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #292929;
+}
+
+.lateral-3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lateral-4 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;   
+}
+
+.sessao-container-4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-container-4 ul {
+    list-style: none;
+}
+
+.button-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-footer button {
+    background-color: #4285F4;
+    border: none;
+    width: 270px;
+    height: 55px;
+    border-radius: 2px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+
+.sessao-texto-4 ul {
+    display: flex;
+}
+
+.sessao-texto-4 li {
+    padding-left: 30px;
+    padding-top: 50px;
+    list-style: none;
+    color: rgb(139, 139, 139);
+    font-family: var(--font-principal);
+    font-size: 14px;
+    cursor: pointer;
+}
