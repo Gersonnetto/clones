@@ -55,6 +55,10 @@
     cursor: pointer;
 }
 
+.sessao-header button:hover {
+    opacity: 0.6;
+}
+
 main {
     width: 100%;
     height: 65%;
@@ -95,6 +99,8 @@ main {
 
 .sessao-input {
     position: relative;
+    font-family: var(--font-principal);
+    color: #878B90;
 }
 
 .input {
@@ -111,9 +117,8 @@ main {
     border-radius: 2px;
 }
 
+
 .field-label {
-    width: 100%;
-    height: 100%;
     font-family: var(--font-principal);
     border: none;
     position: absolute;
@@ -121,11 +126,19 @@ main {
     top: 19px;
     color: #878B90;
     font-size: 16px;
+    transition: 0.5s;
+    pointer-events: none;
+    
 }
 
+
 .field:focus ~ .field-label {
-    opacity: 0;
+    top: -20px;
+    font-size: 16px;
+    color: rgb(185, 185, 185);
 }
+
+
 
 .input button {
     width: 210px;
@@ -479,7 +492,6 @@ main {
     top: 140px;
     left: 50%;
     transform: translate(-50%);
-    padding-bottom: 100px;
 }
 
 .texto-5 p {
@@ -500,18 +512,99 @@ main {
 .sessao-info {
     display: flex;
     position: absolute;
-    top: 50%;
+    top: 350px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 100px;
+    transform: translate(-50%);
 }
 
 .card-info-19 {
     width: 350px;
     height: 515px;
+    margin-right: 30px;
     background-color: #878b903a;
     border-radius: 5px;
     list-style: none;
+    position: relative;
+}
+
+.conteudo-info-19 {
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#p-info-19 {
+    font-family: var(--font-principal);
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+}
+
+#p-cinza {
+    font-family: var(--font-principal);
+    font-size: 14px;
+    color: #878B90;
+}
+
+.conteudo-info-19 p {
+    font-family: var(--font-principal);
+    font-size: 15px;
+    color: #ffffff;
+    padding-bottom: 30px;
+    font-weight: 100; 
+}
+
+.card-info-19 li {
+    font-family: var(--font-principal);
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 200;
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+#li-cinza {
+    font-family: var(--font-principal);
+    font-size: 17px;
+    color: #878B90;
+    font-weight: 200;
+}
+
+.card-info-19 i {
+    padding-right: 10px;
+}
+
+.card-info-19 button {
+    width: 190px;
+    height: 50px;
+    font-family: var(--font-principal);
+    font-size: 18px;
+    background-color: #258AFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card-info-19 button:hover {
+    background-color: #3a96ff;
+}
+
+/* arrumar o paragrfo final */
+
+
+#p-info-29 {
+    font-family: var(--font-principal);
+    font-size: 15px;
+    color: #666666;
+    text-transform: uppercase;
 }
 
 .card-info-29 {
@@ -521,10 +614,178 @@ main {
     border-radius: 5px;
 }
 
-.card-info-19 ul {
+.card-info-29 {
+    width: 350px;
+    height: 515px;
+    background-color: #ffffff;
+    border-radius: 5px;
     list-style: none;
+    position: relative;
+}
+
+.conteudo-info-29 {
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#p-cinza-29 {
+
+}
+
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.header-card button {
+    width: 85px;
+    height: 25px;
+    background-color: #4EAB08;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-card button:hover {
+    background-color: #71c432;
+}
+
+#p-conteudo {
+    font-family: var(--font-principal);
+    font-size: 15px;
+    color: #666666;
+    padding-bottom: 30px;
 }
 
 .card-info-29 ul {
     list-style: none;
+}
+
+.card-info-29 li {
+    font-family: var(--font-principal);
+    font-size: 17px;
+    color: #1F1F1F;
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.card-info-29 i {
+    padding-right: 10px;
+}
+
+.conteudo-card button {
+    width: 190px;
+    height: 50px;
+    font-family: var(--font-principal);
+    font-size: 18px;
+    background-color: #258AFF; ;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 10px; 
+    cursor: pointer;
+}
+
+.conteudo-card button:hover {
+    background-color: #3a96ff;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 50vh;
+}
+
+.conteiner-footer {
+    width: 100%;
+    height: 100%;
+    background-color: #d9f0ff7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-6 {
+    width: 320px;
+    height: 200px;
+    padding-right: 220px;
+    position: relative;
+}
+
+.imagem-wrapper-footer {
+    padding-bottom: 30px;
+}
+
+.logo-6 p {
+    font-family: var(--font-principal);
+    font-size: 16px;
+    color: #666666;
+    padding-bottom: 40px;
+}
+
+.icones-footer {
+    position: absolute;
+    bottom: 0%;
+}
+
+.icones-footer i {
+    padding-right: 20px;
+    color: #258aff;
+    font-size: 20px;
+    cursor: pointer;  
+}
+
+.icones-footer i:hover {
+    color: #59a3f8;
+}
+
+.conteiner-texto-footer {
+    width: 540px;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-menu-footer {
+    width: 100px;
+    height: 230px;
+}
+
+.text-menu-footer h4 {
+    font-family: var(--font-principal);
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+    padding-bottom: 50px;
+    
+}
+
+.menu-text {
+    width: 200px;
+    height: 160px;
+}
+
+.menu-text p {
+    font-family: var(--font-principal);
+    font-size: 15px;
+    color: #1F1F1F;
+    font-weight: bold;
+    padding-bottom: 22px;
+    cursor: pointer;
+}
+
+.menu-text p:hover {
+    color: #5c5c5c;
 }
