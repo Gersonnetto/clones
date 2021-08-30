@@ -1,0 +1,15 @@
+.conteudo-focus {
+    width: 900px;
+    height: 350px;
+    background-color: #242424;
+    justify-content: center;
+}
+
+.conteudo-focus p {
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+    padding: 30px;
+    text-align: justify;
+}
